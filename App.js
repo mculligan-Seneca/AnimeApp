@@ -26,7 +26,7 @@ export default function App() {
       setAnimeList(json.data??[]);
       setHasPage(json.pagination.has_next_page);
       setLoading(false);
-      flatListRef?.scrollToIndex({animated:true,index:0});
+      flatListRef?.scrollToIndex({animated:true,index:0});// set list back to top on reload
     }
     
     const animeSearch=(textInput)=>{//rerender with new query
